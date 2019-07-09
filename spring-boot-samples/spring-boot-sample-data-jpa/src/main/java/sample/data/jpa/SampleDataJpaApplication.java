@@ -19,6 +19,16 @@ package sample.data.jpa;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ *  Run   localhost:8080/h2-console
+ *  for URL   jdbc:h2:mem:testdb
+ *
+ *  SEE ALSO
+ *  https://o7planning.org/ru/11893/integrating-spring-boot-jpa-and-h2-database
+ *
+ */
+
+
 @SpringBootApplication
 public class SampleDataJpaApplication {
 

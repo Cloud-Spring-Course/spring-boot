@@ -16,6 +16,7 @@
 
 package sample.web.ui;
 
+import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -39,8 +40,21 @@ public class SampleWebUiApplication {
 		};
 	}
 
+	/**
+	 * Можно убить приложение с помощью JMX
+	 *
+	 * @param args
+	 * @throws Exception
+	 */
+
 	public static void main(String[] args) throws Exception {
-		SpringApplication.run(SampleWebUiApplication.class, args);
+		//SpringApplication.run(SampleWebUiApplication.class, args);
+
+		SpringApplication app = new SpringApplication(SampleWebUiApplication.class);
+		app.setBannerMode(Banner.Mode.OFF);
+		app.run(args);
+
+
 	}
 
 }
